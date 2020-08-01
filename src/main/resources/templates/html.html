@@ -1,0 +1,68 @@
+<body>
+    <h1>Skills Tracker</h1>
+        <h2>Programming Languages</h2>
+            <ol>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Java</li>
+            </ol>
+</body>
+<!--At localhost:8080,
+add text that states the three possible programming languages someone could be working on.
+You need to have an h1 with the title “Skills Tracker”,
+an h2, and
+an ol
+containing three programming languages of your choosing.-->
+
+<!--__________________________________________________________-->
+
+
+<!--At localhost:8080/form,
+add a form that lets the user enter their name
+and choose their favorite, second favorite, and third favorite programming languages on your list.
+Use select elements for each of the rankings.
+Just as with the exercises, we will use @GetMapping().-->
+<body>
+    <form>
+        <input type='text' name=''>
+        <label>First Favorite Programming Language
+            <select name='firstFavoriteLanguage'>
+                <option value='javaScript'>JavaScript</option>
+                <option value='typeScript'>TypeScript</option>
+                <option value='java'>Java</option>
+            </select>
+        </label>
+
+        <label>Second Favorite Programming Language
+            <select name='secondFavoriteLanguage'>
+                <option value='javaScript'>JavaScript</option>
+                <option value='typeScript'>TypeScript</option>
+                <option value='java'>Java</option>
+            </select>
+        </label>
+
+        <label>Third Favorite Programming Language
+            <select name='thirdFavoriteLanguage'>
+                <option value='javaScript'>JavaScript</option>
+                <option value='typeScript'>TypeScript</option>
+                <option value='java'>Java</option>
+            </select>
+        </label>
+    </form>
+</body>
+
+
+
+<!--__________________________________________________________-->
+<!--Also at localhost:8080/form,
+use @PostMapping and @RequestParam
+to update the HTML with an h1 stating the user’s name
+and an ol showing the three programming languages in the order they chose.-->
+<body>
+<h1>${name}'s Favorite Programming Languages</h1>
+    <ol>
+        <li>1. ${firstFavoriteLanguage}</li>
+        <li>2. ${secondFavoriteLanguage}</li>
+        <li>3. ${thirdFavoriteLanguage}</li>
+    </ol>
+</body>
